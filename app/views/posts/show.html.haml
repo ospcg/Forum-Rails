@@ -1,0 +1,6 @@
+%h1=@post.title
+%p=@post.content
+
+= link_to "Editar", edit_post_path(@post)
+= link_to "Eliminar", post_path(@post), method: :delete, data: { confirm: "Estas Seguro de eliminar?"}
+= link_to "Inicio", root_path
